@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    section#introSection
+          div Welcome to Raghav's Dance Academy
+          div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Mission
+        div.card
+          h3 This is a para
+          div.card-box
+                div.card-img
+                    img(src="/static/pic1.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+ 
+        div.card
+          h3 This is a para
+          div.card-box
+                div.card-img
+                    img(src="/static/pic2.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+        div.card
+          h3 This is a para
+          div.card-box
+                div.card-img
+                    img(src="/static/pic3.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+          
+
+    section#sponsorSection 
+          h2 Our sponsers
+          div#sponsers
+            img(src= "/static/apple.jfif", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/micro.jfif", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/skype.jfif", alt= "Sponsor Image", class= "spImage") 
+
